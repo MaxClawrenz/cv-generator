@@ -1,38 +1,233 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 50vw;
+  margin: 0 auto;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+}
+/* .MuiFormControl-root {
+  margin-bottom: 14px !important;
+} */
+.Main-form{
+  display: flex;
+  flex-direction: column;
+}
+.Main-title{
+  font-size: 24px;
+  color: #c4ac52;
+  border-bottom: 2px solid #c4ac52;
+  margin-bottom: 18px;
+}
+.Main-group {
+  display: flex;
+  justify-content: space-between;
 }
 
-.App-link {
-  color: #61dafb;
+.Experience-form{
+  display: flex;
+  flex-direction: column;
+}
+.Experience-title{
+  font-size: 24px;
+  color: #c4ac52;
+  border-bottom: 2px solid #c4ac52;
+  margin-bottom: 18px;
+}
+.Education-title{
+  font-size: 24px;
+  color: #c4ac52;
+  border-bottom: 2px solid #c4ac52;
+  margin-bottom: 18px;
+}
+.Preview-title{
+  font-size: 24px;
+  color: #c4ac52;
+  border-bottom: 2px solid #c4ac52;
+  margin-bottom: 18px;
+}
+.Job {
+  display: flex;
+  flex-direction: column;
+}
+.Job-selectDate{
+  width: 150px; 
+  margin-right: 10px;
+}
+.Job-selectGroup{
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.fieldElement{
+  margin-bottom: 10px !important;
+  width: 100%;
+}
+.Lang {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Education-form{
+  display: flex;
+  flex-direction: column;
+}
+.University-form{
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Main-topBlock {
+  display: flex;
+  flex-direction: row;
+}
+.pictInstruments {
+  display: flex;
+  width: 97%;
+  justify-content: center;
+}
+.Main-topBlock-pictBlock {
+  display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    width: 40%;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.Main-topBlock-info {
+  display: flex;
+  flex-direction: column;
+  flex: auto;
+}
+.field-group {
+  display: flex;
+}
+.Avatar-img {
+  /* height: 253px; */
+    width: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Avatar {
+  overflow: hidden;
+  padding: 8px;
+  box-sizing: border-box;
+  height: 253px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Avatar-nopict {
+  font-size: 60px;
+  color: #fff;
+  background-color: #8a8888;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-message{
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    font-size: 0.75rem;
+    line-height: 1.66;
+    letter-spacing: 0.03333em;
+    text-align: left;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: -4px;
+    margin-left: 14px;
+    margin-right: 14px;
+    color: #d32f2f;
+}
+.btnBlock{
+  margin-bottom: 14px;
+}
+.Preview-avatar{
+  border: 1rem solid white;
+    transform: rotate(355deg);
+    box-shadow: rgb(0 0 0 / 26%) 4px 4px 10px;
+}
+.Preview-cv-main {
+  display: flex;
+  flex-direction: row;
+}
+.Preview-info {
+  display: flex;
+  flex-direction: column;
+}
+.Preview-photo {
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.Preview-fio {
+  font-size: 34px;
+}
+.Preview-fioblock{
+  margin-bottom: 14px;
+}
+.Preview-block {
+  margin-top: 8px;
+}
+.salaryBlock {
+  display: flex;
+}
+.positionBlock {
+  display: flex;
+  margin-top: 8px;
+}
+.salary {
+  font-weight: 600;
+}
+.position {
+  font-weight: 600;
+}
+.salaryTitle {
+  color: grey;
+  font-weight: 200;
+  margin-right: 14px;
+  width: 170px;
+}
+.positionTitle {
+  color: grey;
+  font-weight: 200;
+  margin-right: 14px;
+  width: 170px;
+}
+.mainBlock{
+  display: flex;
+}
+.mainTitle{
+  color: grey;
+  font-weight: 200;
+  margin-right: 14px;
+}
+.Preview-cv-experience {
+  margin-top: 18px;
+}
+.experienceTitle{
+    font-size: 19px;
+    font-weight: 600;
+}
+.ExperiencePreview-header {
+  width: 45%;
+}
+.ExperiencePreview-jobname {
+  font-size: 16px;
+  font-weight: 600;
+}
+.ExperiencePreview{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 8px;
 }
